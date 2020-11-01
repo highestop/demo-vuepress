@@ -1,0 +1,24 @@
+# Node rules:
+## grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
+.grunt
+
+# dependencies
+node_modules
+node_modules.*/
+package-lock.json
+yarn.lock
+
+# book build output
+_book
+
+# ebook build output
+*.epub
+*.mobi
+*.pdf
+
+# IDE
+.idea
+
+# system files
+.DS_Store
+Thumbs.db
