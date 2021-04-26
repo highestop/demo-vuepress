@@ -1,24 +1,31 @@
-# Node rules:
-## grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
-.grunt
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/dist
+/out-tsc
 
 # dependencies
-node_modules
-node_modules.*/
+/node_modules
+
+# registry
+.npmrc
+.yarnrc
+
+# locks
 package-lock.json
 yarn.lock
 
-# book build output
-_book
+# editors
+/.idea
+*.launch
 
-# ebook build output
-*.epub
-*.mobi
-*.pdf
+# types
+/typings
 
-# IDE
-.idea
+# logs
+npm-debug.log
+yarn-error.log
 
-# system files
+# system
 .DS_Store
 Thumbs.db

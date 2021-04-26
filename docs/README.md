@@ -1,1 +1,1 @@
-# VuePress Template
+# demo-vuepress

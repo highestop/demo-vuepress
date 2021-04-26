@@ -1,29 +1,12 @@
 {
-  "name": "@highestop/vuepress-template",
-  "version": "0.0.0-NOT-USED",
-  "private": true,
-  "license": "MIT",
-  "description": "Highestop's Vue Press",
-  "author": "highestop Chen",
+  "name": "demo-vuepress",
+  "version": "0.0.0",
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
-    "prepare": "cp CHANGELOG.md docs/change-log/README.md && cp README.md docs/README.md"
-  },
-  "cli": {
-    "packageManager": "yarn"
+    "prebuild": "mkdir -p docs/changelogs && cp CHANGELOG.md docs/changelogs/README.md && cp README.md docs/README.md"
   },
   "dependencies": {
-    "vuepress": "^1.7.1"
-  },
-  "devDependencies": {
-    "@commitlint/cli": "^11.0.0",
-    "@commitlint/config-conventional": "^11.0.0",
-    "husky": "^4.3.0"
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
+    "vuepress": "^1.8.2"
   }
 }
